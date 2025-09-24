@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray500: hsl(0, 0%, 42%);
+  --gray900: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    font-style: italic;
+    font-weight: 300 900;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 300 900;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(./assets/fonts/static/Figtree-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__section {
+    border: 1px solid var(--gray900);
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px var(--gray900);
+    width: 25rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.figure1 {
+    border-radius: 20px;
+}
+
+.img1 {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.learning {
+    background-color: var(--yellow);
+    width: max-content;
+    padding: 0.3rem 0.6rem;
+    font-family: 'FigTree';
+    font-style: normal;
+    font-weight: 800;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.text1 {
+    font-family: 'FigTree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.h1 {
+
+    font-family: 'FigTree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.text2 {
+    font-family: 'FigTree';
+    font-style: normal;
+    font-weight: 400;
+    color: var(--gray500);
+    line-height: 1.5rem;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.text3 {
+    font-family: 'FigTree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.img2 {
+    width: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .main__section {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
